@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Covid-19 World Cases</title>
+    <link rel="stylesheet" href="covidcase.css" />
+    <link rel="shortcut icon" href="../Images/covidlogo.png" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <div class="item1">
+          <div id="flex-header">
+            <h2 class="covidcaseheader">Covid-19 World Cases</h2>
+            <img src="../Images/covidlogo.png" alt="logo" />
+          </div>
+
+          <hr class="solid" />
+        </div>
+
+        <div class="item2">
+          <div class="topcountry">
+            <h3>Top 10 Countries</h3>
+            <div class="table">
+              <table id="listcountry"></table>
+            </div>
+          </div>
+        </div>
+
+        <div class="item3">
+          <div>
+            <h3 style="margin-top: 0.25em; margin-bottom: 0.25em">
+              Covid-19 World Cases Update
+            </h3>
+
+            <div class="flex-container">
+              <div class="input_wrap" id="casesbg">
+                <p>Confirmed</p>
+                <div id="totalcases"></div>
+              </div>
+              <div class="input_wrap" id="recoverbg">
+                <p>Recover</p>
+                <div id="totalrecover"></div>
+              </div>
+              <div class="input_wrap" id="deathbg">
+                <p>Deaths</p>
+                <div id="totaldeath"></div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="solid" />
+
+          <div>
+            <div class="flex-datentime">
+              <h3 style="margin-top: 0.25em; margin-bottom: 0.25em">
+                Today Cases Update
+              </h3>
+              <p id="datentime"></p>
+            </div>
+
+            <div class="flex-container">
+              <div class="input_wrap" id="casesbg">
+                <p>Active Cases</p>
+                <div id="activecases"></div>
+              </div>
+              <div class="input_wrap" id="recoverbg">
+                <p>New Cases</p>
+                <div id="dailycases"></div>
+              </div>
+              <div class="input_wrap" id="deathbg">
+                <p>New Deaths</p>
+                <div id="dailydeath"></div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="solid" />
+
+          <div>
+            <h3 style="margin-top: 0.25em; margin-bottom: 0.25em">
+              Country Cases
+            </h3>
+            <div class="flex-search">
+              <div>
+                <p>Country:</p>
+              </div>
+
+              <div id="searchWrapper">
+                <input
+                  type="text"
+                  name="searchBar"
+                  id="searchBar"
+                  placeholder="search for a Country"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-search-details" id="searchCountry">
+            <div class="input_wrap" id="casesbg">
+              <p>Confirmed</p>
+              <div id="countrycases"></div>
+            </div>
+            <div class="input_wrap" id="recoverbg">
+              <p>Recover</p>
+              <div id="countryrecover"></div>
+            </div>
+            <div class="input_wrap" id="deathbg">
+              <p>Deaths</p>
+              <div id="countrydeaths"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="api.js"></script>
+  </body>
+</html>
